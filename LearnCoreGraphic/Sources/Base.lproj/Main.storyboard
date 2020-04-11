@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="LearnCoreGraphic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zmc-Km-kgB">
+                                <rect key="frame" x="18" y="354" width="284" height="106"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4zk-tl-kjN">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1W-RJ-vIo">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="RCB-eD-rW0"/>
+                                                    <constraint firstAttribute="height" constant="30" id="ghA-KQ-sob"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="DRAW RECTANGLE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressDrawRectangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWG-cy-g64"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noa-iz-ZLT">
+                                                <rect key="frame" x="145" y="0.0" width="139" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Ul0-GK-uT7"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="zuK-Bs-9bW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="FILLED RECTANGLE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressDrawFilledRectangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="inf-5A-U1d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="spF-LZ-Jtx">
+                                        <rect key="frame" x="0.0" y="38" width="284" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKj-rJ-7Cm">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="ocu-RH-Ywn"/>
+                                                    <constraint firstAttribute="height" constant="30" id="p4F-I1-P12"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="DRAW CIRCLE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressDrawCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnj-A7-EBU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seD-Wa-asC">
+                                                <rect key="frame" x="145" y="0.0" width="139" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="He3-lI-9vA"/>
+                                                    <constraint firstAttribute="height" constant="30" id="y5l-Bo-HiJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="FILLED CIRCLE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressDrawFilledCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zH-G2-Hc1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="5Bq-6F-rTp">
+                                        <rect key="frame" x="0.0" y="76" width="284" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxs-64-FHd">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="73b-OG-Bea"/>
+                                                    <constraint firstAttribute="height" constant="30" id="PZK-8P-kKf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="DRAW TRIANGLE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressDrawTriangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Htn-DT-4Ar"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crf-bv-s1j">
+                                                <rect key="frame" x="145" y="0.0" width="139" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="E4U-cW-y7s"/>
+                                                    <constraint firstAttribute="height" constant="30" id="xv3-ph-hzE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="FILLED TRIANGLE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressDrawFilledTriangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x18-MQ-O6N"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" restorationIdentifier="DrawView" translatesAutoresizingMaskIntoConstraints="NO" id="jhy-kT-phk" customClass="DrawView" customModule="LearnCoreGraphic" customModuleProvider="target">
+                                <rect key="frame" x="40" y="70" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="py7-ST-ajf"/>
+                                    <constraint firstAttribute="width" constant="240" id="tww-aE-GyM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zmc-Km-kgB" firstAttribute="top" secondItem="jhy-kT-phk" secondAttribute="bottom" constant="44" id="WKC-9Y-Dvv"/>
+                            <constraint firstItem="jhy-kT-phk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="dd4-QV-jj2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zmc-Km-kgB" secondAttribute="trailing" constant="18" id="f6O-Hq-qe1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zmc-Km-kgB" secondAttribute="bottom" constant="20" id="u5n-PQ-4pX"/>
+                            <constraint firstItem="jhy-kT-phk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wbI-h0-dXn"/>
+                            <constraint firstItem="Zmc-Km-kgB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="x9O-aQ-8aI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="circleButton" destination="aKj-rJ-7Cm" id="jxx-nK-7aI"/>
+                        <outlet property="drawView" destination="jhy-kT-phk" id="HWV-H1-I7m"/>
+                        <outlet property="filledCircleButton" destination="seD-Wa-asC" id="KM3-VV-A9E"/>
+                        <outlet property="filledRectangleButton" destination="noa-iz-ZLT" id="XvX-Lf-M29"/>
+                        <outlet property="filledTriangleButton" destination="crf-bv-s1j" id="q1U-e9-Gqh"/>
+                        <outlet property="rectangleButton" destination="W1W-RJ-vIo" id="XXe-IM-1dh"/>
+                        <outlet property="triangleButton" destination="qxs-64-FHd" id="z2O-mr-Hpa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="115"/>
+        </scene>
+    </scenes>
+</document>
